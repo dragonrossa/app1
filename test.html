@@ -1,0 +1,99 @@
+<html>
+   <head>
+     <title> Tko je dužan? </title>
+     <!--<script src="demo.js"></script>-->
+	 <script src="calendar.js"></script>
+	 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	 
+	 <link href='https://fonts.googleapis.com/css?family=Amatic SC' rel='stylesheet'>
+	 
+	 
+	 <style>
+	 
+	 div.ex1 {
+    width:220px;
+    margin: auto;
+    border: 3px solid ffffff;
+	background-color:#ffffff;
+}
+
+	body {
+    font-family: 'Amatic SC';font-size: 22px;
+	background-image: url('pozadina.png');
+	background-repeat: no-repeat;
+	height:100%;
+	background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+	}
+	
+	
+	@media only screen and (min-device-width: 400px) {
+    body { 
+       background-image: url('pozadina.png'); 
+    }
+}
+	
+.container {
+  position: relative;
+  width: 30%;
+}
+
+.container img {
+  width: 30%;
+  height: auto;
+
+}
+
+.container .btn {
+  font-family: 'Amatic SC';font-size: 30px;
+  position: absolute;
+  top: 50px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color:#8c6239;
+  color:white;
+  padding: 20px 20px;
+  border: none;
+  cursor: pointer;
+  border-radius: 12px;
+}
+.container .btn:hover {
+  background-color: rgb(94, 41, 5);
+}
+
+a:link, a:visited {
+    color: white;
+    text-align: center; 
+    text-decoration: none;
+    display: inline-block;
+}
+	
+	 </style>
+	 
+	 
+   </head>
+   <body>
+   
+
+        <div class="container">
+                <button class="btn"> <a href="index.html">Natrag</a></button>     
+              </div>
+   
+   <div align="center" style="border":1px yellow">
+   <br><br><br><br><br>
+   
+   <p align="center"><h1 style="font-size:10vw"><span>Tko je dužan?</span></h1></p>
+    </div>
+   
+   <div class="ex1">
+   <script type="text/javascript">writeCalendar()</script>
+   <style type="text/css">
+span.label {color:black;width:30;height:16;text-align:center;margin-top:0;background:#ffF;font:bold 13px Arial}
+span.c1 {cursor:hand;color:black;width:30;height:16;text-align:center;margin-top:0;background:#ffF;font:bold 13px Arial}
+span.c2 {cursor:hand;color:red;width:30;height:16;text-align:center;margin-top:0;background:#ffF;font:bold 13px Arial}
+span.c3 {cursor:hand;color:#b0b0b0;width:30;height:16;text-align:center;margin-top:0;background:#ffF;font:bold 12px Arial}
+</style> </div></div>
+   </body>
+</html>
