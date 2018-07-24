@@ -2,7 +2,14 @@
    <head>
      <title> Tko je dužan? </title>
      <!--<script src="demo.js"></script>-->
-	 <script src="calendar.js"></script>
+	 <script>
+
+  
+
+    
+   
+   
+   </script>
 	 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	 
 	 <link href='https://fonts.googleapis.com/css?family=Amatic SC' rel='stylesheet'>
@@ -81,12 +88,45 @@ a:link, a:visited {
                 <button class="btn"> <a href="index.html">Natrag</a></button>     
               </div>
    
-  <br><br><br><br>
+  <br><br><br>
   
-   <p align="center"><h1 style="font-size:10vw"><span>    Unesi novi sastanak</span></h1></p>
-   
+   <h1 style="font-size:10vw"> &nbsp; &nbsp;Unesi novi sastanak</h1>
+   <p align="left" style="font-size:8vw"><span><b> &nbsp; &nbsp;Upiši podatke o prijatelju</b></span></p>
  
+   <form id="frm1" action="/action_page.php">
    
+    &nbsp;<b>Ime</b>  &nbsp; &nbsp; &nbsp;
+    <input type="text" name="fname" align="left" > <br><br>
+    &nbsp; <b>Prezime</b>
+    <input type="text" name="lname" align="left"><br><br>
+    &nbsp; <b>Datum</b> &nbsp;
+    <input type="date" name="datum"><br><br>
+    &nbsp; <b>Iznos</b> &nbsp; &nbsp;
+    <input type="number" name="iznos" align="left" min="1" max="1000"><br><br>
+
+    &nbsp; <b>Tko plaća?</b>  &nbsp; &nbsp; &nbsp;
+    <select name="placa">
+        <option value="ja">Ja</option>
+        <option value="on">On</option>
+        <option value="ona">Ona</option> <br><br>
+    
+
+        
+    </select>
+
+    <br><br>
+
+    <div class="container">
+
+        <input type="button" class="btn" value="Dodaj" onclick="redirect_to('page.php/?id=8&input='+this.form.formelem.value)">
+
+        
+           
+  </button> 
+</div> 
+
+
+  </form>
   
    </body>
 </html>
